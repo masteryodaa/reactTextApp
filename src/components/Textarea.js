@@ -45,7 +45,7 @@ function Textarea(props) {
 
                 <h2>text summary</h2>
                 <h6>
-                    {text?text.split(' ').length:0} words and {text.length} characters.
+                    {text?text.split(' ').filter(elem=>elem.length!==0).length:0} words and {text.length} characters.
                 </h6>
             </div>
         </div>
